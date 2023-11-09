@@ -24,8 +24,8 @@ function App() {
             return '';
         }
       }
-        setInputVal(sum);
-        }
+        setInputVal((sum()).toString());
+      }
         return false;
       });
   }
@@ -61,8 +61,6 @@ function App() {
         <button onClick={calculate}>=</button>
         <button onClick={(e)=>concatInput(e.target.value)} value="/">/</button>
         </div>
-      {/*<button onClick={back}>Back</button>
-      <button onClick={forward}>Forward</button>*/}
       </section>
       <section>
         <input type="text" value={inputVal} readOnly/>
